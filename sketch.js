@@ -9,7 +9,7 @@ let colortime = 0;
 let RRGGBB = [0, 0, 0];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1150, 760);
 
   // Create a video capture object
   video = createCapture(VIDEO);
@@ -91,5 +91,5 @@ function draw() {
       );
     }
   }
-  image(img1, 0, -5, windowWidth, windowHeight + 10);
+  image(img1, 0, -5, 1150, 760 + 10);
 }
