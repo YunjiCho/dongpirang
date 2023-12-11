@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "MaruBuri-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        background-color: black;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #logo {
+        position: fixed;
+        top: 30px;
+        left: 40px;
+        width: 250px; /* 조절 가능한 로고의 크기 */
+        height: auto; /* 비율 유지를 위해 자동으로 높이 설정 */
+      }
+
+      #index {
+        color: #fff2cf;
+        font-size: 24px;
+        text-align: right;
+        margin-right: 20%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #000000;
+        font-family: "MaruBuri-Regular";
+      }
+
+      #sidebar {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        padding-right: 9%;
+        height: 100%;
+        background-color: #000000;
+        padding-top: 20px;
+      }
+
+      #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #sidebar ul li {
+        margin-bottom: 10px;
+      }
+
+      #sidebar a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #fff2cf;
+        font-size: 20px;
+        font-family: "MaruBuri-Regular";
+      }
+
+      #content {
+        margin-right: 200px;
+        padding: 20px;
+      }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
+    <title>Your Page Title</title>
   </head>
   <body>
-    <script src="sketch.js"></script>
+    <img id="logo" src="logo.svg" alt="Logo" />
+    <div id="index">차례 &nbsp; Index</div>
+    <div id="sidebar">
+      <ul>
+        <li><a href="page1.html">[1]&nbsp; 그 언덕의 재발견 2007</a></li>
+        <li><a href="page2.html">[2]&nbsp; 동피랑 블루스 2010</a></li>
+        <li><a href="page3.html">[3]&nbsp; 땡큐 동피랑 2012</a></li>
+        <li><a href="page4.html">[4]&nbsp; 점프 동피랑 2014</a></li>
+        <li><a href="page5.html">[5]&nbsp; 고고 동피랑 2016</a></li>
+        <li><a href="page6.html">[6]&nbsp; 다같이 동피랑 2018</a></li>
+        <li><a href="page7.html">[7]&nbsp; 공공미술 프로젝트</a></li>
+        <li><a href="page8.html">[8]&nbsp; 제 8회 동피랑 아트축제</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <script src="sketch.js"></script>
+    </div>
   </body>
 </html>

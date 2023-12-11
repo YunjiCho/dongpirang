@@ -9,8 +9,8 @@ let colortime = 0;
 let RRGGBB = [0, 0, 0];
 
 function setup() {
-  createCanvas(1150, 760);
-
+  canvas = createCanvas(1150, 760);
+  canvas.position(50, 100);
   // Create a video capture object
   video = createCapture(VIDEO);
   video.position(-500, -100);
