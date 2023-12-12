@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2012 땡큐 동피랑</title>
+    <style>
+      @font-face {
+        font-family: "MaruBuri-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        font-family: "MaruBuri-Regular";
+        background-color: black;
+        color: #fff2cf;
+        line-height: 190%;
+        font-size: 16px;
+      }
+      h1 {
+        border-bottom: 2px dashed #fff2cf;
+        padding-bottom: 20px;
+      }
+      #logo {
+        position: fixed;
+        top: 30px;
+        left: 40px;
+        width: 250px; /* 조절 가능한 로고의 크기 */
+        height: auto; /* 비율 유지를 위해 자동으로 높이 설정 */
+      }
+
+      #image-list {
+        flex: 1;
+      }
+
+      #text-content {
+        margin-top: 20px;
+        flex: 1;
+        margin-left: 5%;
+        margin-right: 2%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px; /* 이미지 사이의 간격을 조절할 수 있습니다. */
+        border-radius: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"> <img id="logo" src="logo.svg" alt="Logo" /></a>
+    <div id="image-list">
+      <!-- 이미지 리스트 -->
+      <img src="2012-1.png" alt="Image 1" />
+      <img src="2012-2.png" alt="Image 2" />
+      <img src="2012-3.png" alt="Image 3" />
+    </div>
+    <div id="text-content">
+      <!-- 텍스트 내용 -->
+      <h1>[03]</h1>
+      <h1>2012 땡큐 동피랑</h1>
+      <p>
+        2012 동피랑 세 번째 벽화전을 위한 특별위원회가 동피랑 구판장에서 지난
+        14일 개최돼 ‘땡큐, 동피랑’이란 주제로 정해졌다. 동피랑 특별위원회는
+        “불편을 인내하고 기꺼이 맞아주는 주민들에 대한 감사의 마음, 전국에서
+        찾아와 그림을 그려준 사람들에 대한 고마움, 가난하지만 따뜻하게 정을
+        나누며 사는 마을공동체에 대한 감사의 마음 등등이 한데 어우러진 뜻이다”고
+        이번 주제 의의를 밝혔다.
+      </p>
+      <p></p>
+    </div>
+  </body>
+</html>
