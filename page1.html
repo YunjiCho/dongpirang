@@ -19,11 +19,14 @@
         background-color: black;
         color: #fff2cf;
         line-height: 190%;
-        font-size: 16px;
+        font-size: 18px;
       }
       h1 {
+        padding-top: 16px;
         border-bottom: 2px dashed #fff2cf;
         padding-bottom: 20px;
+        padding-left: 20px;
+        border-left: 2px dashed #fff2cf; /* 왼쪽에 dash line을 추가 */
       }
       #logo {
         position: fixed;
@@ -56,6 +59,12 @@
       }
     </style>
   </head>
+  <script>
+    // 페이지 로드 후 10초 후에 메인 페이지로 이동
+    setTimeout(function () {
+      window.location.href = "index.html";
+    }, 120000); // 10000 밀리초는 10초를 의미합니다.
+  </script>
   <body>
     <a href="index.html"> <img id="logo" src="logo.svg" alt="Logo" /></a>
     <div id="image-list">
@@ -68,7 +77,6 @@
       <h1>[01]</h1>
       <h1>2007 그 언덕의 재발견</h1>
       <p>
-        <br />
         동피랑이란 "동쪽에 있는 비탈"이라는 뜻의 통영 사투리이다. 이 지역은
         통영시 중앙시장 뒷편인 정량동,태평동 일대로 서민들의 오랜 삶터로
         저소득층 주민들이 옹기종기 정겹게 살고 있는 산비탈 달동네이다.
@@ -85,6 +93,7 @@
         그리기 시작했고 전국에서 19개팀이 참가해 벽화를 그렸다. 벽화가 완성되자
         동피랑 마을은 순식간에 전국적인 명소로 떠올랐다.
       </p>
+
       <p></p>
     </div>
   </body>

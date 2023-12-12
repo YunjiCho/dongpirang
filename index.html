@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="120;url=index.html" />
     <style>
       @font-face {
         font-family: "MaruBuri-Regular";
@@ -20,7 +19,7 @@
 
       #logo {
         position: fixed;
-        top: 30px;
+        top: 36px;
         left: 30px;
         width: 250px; /* 조절 가능한 로고의 크기 */
         height: auto; /* 비율 유지를 위해 자동으로 높이 설정 */
@@ -53,7 +52,8 @@
       }
 
       #sidebar ul li {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
+        border-left: 2px dashed #fff2cf; /* 왼쪽에 dash line을 추가 */
         border-bottom: 2px dashed #fff2cf; /* 얇은 줄을 추가 */
       }
 
@@ -63,7 +63,7 @@
         padding-right: 0;
         text-decoration: none;
         color: #fff2cf;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "MaruBuri-Regular";
       }
 
@@ -77,10 +77,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <title>동피랑 벽화 축제 아카이빙 웹</title>
   </head>
+
   <body>
     <div id="content">
       <script src="sketch.js"></script>
     </div>
+
     <img id="logo" src="logo.svg" alt="Logo" />
     <h1 id="index">차례 &nbsp; Index</h1>
     <div id="sidebar">

@@ -19,11 +19,14 @@
         background-color: black;
         color: #fff2cf;
         line-height: 190%;
-        font-size: 16px;
+        font-size: 18px;
       }
       h1 {
+        padding-top: 16px;
         border-bottom: 2px dashed #fff2cf;
         padding-bottom: 20px;
+        padding-left: 20px;
+        border-left: 2px dashed #fff2cf; /* 왼쪽에 dash line을 추가 */
       }
       #logo {
         position: fixed;
@@ -56,6 +59,12 @@
       }
     </style>
   </head>
+  <script>
+    // 페이지 로드 후 10초 후에 메인 페이지로 이동
+    setTimeout(function () {
+      window.location.href = "index.html";
+    }, 120000); // 10000 밀리초는 10초를 의미합니다.
+  </script>
   <body>
     <a href="index.html"> <img id="logo" src="logo.svg" alt="Logo" /></a>
     <div id="image-list">
