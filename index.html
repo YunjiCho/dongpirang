@@ -77,7 +77,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <title>동피랑 벽화 축제 아카이빙 웹</title>
   </head>
-
+  <script>
+    // 페이지 로드 후 10초 후에 메인 페이지로 이동
+    setTimeout(function () {
+      window.location.href = "index.html";
+    }, 120000 * 2); // 10000 밀리초는 10초를 의미합니다.
+  </script>
   <body>
     <div id="content">
       <script src="sketch.js"></script>
